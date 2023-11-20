@@ -10,6 +10,8 @@ pool:
   vmImage: ubuntu-latest
 steps:
 #- checkout: self
+- script: pwd
+- script: ls
 - task: SynopsysSecurityScan@1
   inputs:
     scanType: 'polaris'
@@ -17,5 +19,5 @@ steps:
     bridge_polaris_accessToken: '$(PolarisToken)'
     bridge_polaris_application_name: 'NAM Demo'
     bridge_polaris_project_name: 'guava'
-    bridge_polaris_assessment_types: 'SAST,SCA'
+    bridge_polaris_assessment_types: 'SCA'
     bridge_polaris_branch_name: '$(Build.SourceBranchName)'
