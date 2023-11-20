@@ -1,0 +1,21 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+steps:
+#- checkout: self
+- task: SynopsysSecurityScan@1
+  inputs:
+    scanType: 'polaris'
+    bridge_polaris_serverUrl: 'https://polaris.synopsys.com'
+    bridge_polaris_accessToken: '$(PolarisToken)'
+    bridge_polaris_application_name: 'NAM Demo'
+    bridge_polaris_project_name: 'guava'
+    bridge_polaris_assessment_types: 'SAST,SCA'
+    bridge_polaris_branch_name: '$(Build.SourceBranchName)'
