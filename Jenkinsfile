@@ -23,10 +23,9 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Install Java') {
             steps {
-                echo 'Deploying...'
-                // Add deployment commands here
+                echo "Figure out how to install JAVA here"
             }
         }
 
