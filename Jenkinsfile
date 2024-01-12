@@ -5,9 +5,9 @@ pipeline {
          stage('Security Scan') {
             steps {
                 script {
-                    synopsys_scan product: "polaris", polaris_server_url: "https://polaris.synopsys.com", polaris_access_token: "b67ens83eh4ot0osev3src0qg696afh3vbm4dgcber9sg36p8gen3e9g00g0eedvc18oo5pi5g3g0", 
-                    polaris_application_name: "KyleH", 
-                    polaris_project_name: "Guava", polaris_branch_name: "master", polaris_assessment_types: "SCA, SAST"
+                    synopsys_scan product: "polaris", polaris_server_url: "https://poc.polaris.synopsys.com", polaris_access_token: "s4jpgckfat47f3dcaebrc486li9tn9a59onks8d0f0t2p1rioudln27nsbemmun4ltpgv0d50iqak", 
+                    polaris_application_name: "guava", 
+                    polaris_project_name: "1.0", polaris_branch_name: "master", polaris_assessment_types: "SCA, SAST"
                 }
             }
         }
