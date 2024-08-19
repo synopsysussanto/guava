@@ -9,6 +9,7 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+steps:
 - task: SynopsysSecurityScan@1
   env:
     DETECT_PROJECT_NAME: $(Build.Repository.Name)
