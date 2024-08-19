@@ -16,5 +16,5 @@ steps:
     DETECT_PROJECT_VERSION_NAME: '1.0'  
   inputs:
     scanType: 'BlackDuck SCA'
-    BLACKDUCK_URL: 'https://expressonboarding.app.blackduck.com'
-    BLACKDUCK_TOKEN: 'OTgzYWRjY2QtNjI3Ni00YTlmLWE4NGItNGE2NGJhN2U5N2E3OmFkNDAyMjg0LTg4NWMtNDY5Zi1hOWYzLTM1ZjUzMTRjYjU0NQ=='
+    blackduck_url: 'https://expressonboarding.app.blackduck.com'
+    blackduck_token: 'OTgzYWRjY2QtNjI3Ni00YTlmLWE4NGItNGE2NGJhN2U5N2E3OmFkNDAyMjg0LTg4NWMtNDY5Zi1hOWYzLTM1ZjUzMTRjYjU0NQ=='
